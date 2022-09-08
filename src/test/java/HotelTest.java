@@ -30,14 +30,14 @@ public class HotelTest {
     @Test
     public void canGuestCheckIn(){
         hotel.guestCheckIn(guest1, bedroom1);
-        assertEquals(1, bedroom1.getGuestList());
+        assertEquals(1, bedroom1.getGuestListSize());
     }
 
     @Test
     public void canGuestCheckOut(){
         hotel.guestCheckIn(guest1, bedroom1);
         hotel.guestCheckOut(bedroom1);
-        assertEquals(0, bedroom1.getGuestList());
+        assertEquals(0, bedroom1.getGuestListSize());
     }
 
 

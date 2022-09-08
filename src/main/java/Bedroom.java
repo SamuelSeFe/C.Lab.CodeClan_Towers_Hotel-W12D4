@@ -12,7 +12,7 @@ public class Bedroom extends Room {
     }
 
     public int getRoomCapacity() {
-        capacity = roomType.getValue();
+        capacity = roomType.getCapacity();
         return capacity;
     }
 
